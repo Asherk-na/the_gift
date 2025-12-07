@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fun Anniversary Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Fun Quiz — How Well Do You Know Them?</h1>
+      <p class="subtitle">Choose a set and answer 20 questions — see your score at the end.</p>
+    </div>
+  </header>
+
+  <main class="container content-section">
+    <div class="quiz-controls" style="margin-bottom:18px;">
+      <button id="btn-him" type="button" class="nav-cta">Quiz: For Him</button>
+      <button id="btn-her" type="button" class="nav-cta">Quiz: For Her</button>
+    </div>
+
+    <div id="quiz-area">
+      <h2 id="quiz-title" style="color:var(--main-purple);">Select a quiz above to begin</h2>
+      <form id="quiz-form"></form>
+      <div style="text-align:center; margin-top:18px;">
+        <button id="submit-quiz" type="button" onclick="checkQuiz(event)">Submit Answers</button>
+        <button id="export-results" type="button" style="margin-left:8px;">Export Last Submission</button>
+        <button id="view-saved" type="button" style="margin-left:8px;">View Saved Submissions</button>
+      </div>
+      <div id="quiz-result" style="margin-top:20px; font-weight:700;"></div>
+      <div id="saved-results" style="margin-top:18px; text-align:left; max-width:720px; margin-left:auto; margin-right:auto;"></div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding: 30px 10px; color: #666;">
+    <a href="index.html">Back home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
